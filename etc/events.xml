@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+	<event name="sales_order_save_after">
+		<observer instance="EmbedSocial\Reviews\Observer\Sales\OrderSaveAfter" name="embedsocial_reviews_observer_sales_ordersaveafter_sales_order_save_after"/>
+	</event>
+	<event name="admin_system_config_changed_section_embedsocial">
+		<observer instance="EmbedSocial\Reviews\Observer\ConfigObserver" name="embedsocial_reviews_observer_sales_ordersaveafter_sales_order_save_after"/>
+	</event>
+</config>

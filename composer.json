@@ -1,0 +1,22 @@
+{
+    "name": "embedsocial/module-reviews",
+    "description": "Reviews Magento Module",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "email": "contact@embedsocial.com",
+            "name": "EmbedSocial"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "EmbedSocial\\Reviews\\": ""
+        }
+    }
+}
