@@ -16,7 +16,7 @@
 
 ### Step 2: Configuration
 
-Go to _Stores_ -> _Settings_ -> _Configuration_. Choose your store from the dropdown menu on the top left. 
+Go to _Stores_ -> _Configuration_. Choose your store from the dropdown menu on the top left (Store view). 
 
 Click on _EmbedSocial_ on the sidebar and choose _Reviews_. Enter your EmbedSocial API key, and click _Save Config_
 

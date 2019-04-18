@@ -114,6 +114,9 @@ class Data extends AbstractHelper
                 if (!$product) {
                     continue;
                 }
+                if ($product->getTypeId() === 'configurable') {
+                    continue;
+                }
 
                 $productData = [];
                 $productData['name'] = $product->getName();
@@ -134,9 +137,12 @@ class Data extends AbstractHelper
                 $data['products'][$product->getId()] = $productData;
             }
 
-            $params = ['token' => $apiKey, 'data' => json_encode($data)];
-            $this->_curl->post(self::ORDER_API_URL, $params);
-            $response = $this->_curl->getBody();
+            //skip if no products
+            if ($data['products']) {
+                $params = ['token' => $apiKey, 'data' => json_encode($data)];
+                $this->_curl->post(self::ORDER_API_URL, $params);
+                $response = $this->_curl->getBody();
+            }
 
         } catch (\Exception $e) {
             $this->_logger->error(json_encode($e));
