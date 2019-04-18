@@ -88,7 +88,7 @@ class Data extends AbstractHelper
             $orderStatuses = explode(",", $orderStatuses);
 
             if (!in_array($order->getState(), $orderStatuses)) {
-                //return;
+                return;
             }
 
             $data['customerEmail'] = $order->getCustomerEmail();
