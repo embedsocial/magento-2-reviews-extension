@@ -13,7 +13,7 @@
                 <comment>                                                
                     <![CDATA[
                     <p style="font-size: 16px" >Please enter in your <strong>API key</strong> to finish the installation</p>
-                    <p style="font-size: 16px" >Check out our <a href="https://embedsocial.com" target="_blank">knowledge base</a> for more information.</p>
+                    <p style="font-size: 16px" >Check out our <a href="https://embedsocial.com/knowledge-base/how-to-install-embedsocial-plugin-in-magento/" target="_blank">knowledge base</a> for more information.</p>
                     ]]>
                 </comment> 
                 <field id="apikey" showInDefault="0" showInStore="1" showInWebsite="0" sortOrder="10" translate="label" type="text">
